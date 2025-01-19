@@ -1,3 +1,3 @@
 library;
 
-export 'src/daltonic_base.dart';
+export 'src/main.dart';
