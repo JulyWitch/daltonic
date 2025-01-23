@@ -14,167 +14,180 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
-SubResponse _$SubResponseFromJson(Map<String, dynamic> json) {
-  return _Response.fromJson(json);
+SubsonicResponse _$SubsonicResponseFromJson(Map<String, dynamic> json) {
+  return _SubsonicResponse.fromJson(json);
 }
 
 /// @nodoc
-mixin _$SubResponse {
+mixin _$SubsonicResponse {
   @JsonKey(name: 'status')
   ResponseStatus get status => throw _privateConstructorUsedError;
   @JsonKey(name: 'version')
   String get version => throw _privateConstructorUsedError;
-  @JsonKey(name: 'musicFolders')
+  @JsonKey(name: 'musicFolders', includeIfNull: false)
   MusicFolders? get musicFolders => throw _privateConstructorUsedError;
-  @JsonKey(name: 'indexes')
+  @JsonKey(name: 'indexes', includeIfNull: false)
   Indexes? get indexes => throw _privateConstructorUsedError;
-  @JsonKey(name: 'directory')
+  @JsonKey(name: 'directory', includeIfNull: false)
   Directory? get directory => throw _privateConstructorUsedError;
-  @JsonKey(name: 'genres')
+  @JsonKey(name: 'genres', includeIfNull: false)
   Genres? get genres => throw _privateConstructorUsedError;
-  @JsonKey(name: 'artists')
+  @JsonKey(name: 'artists', includeIfNull: false)
   ArtistsId3? get artists => throw _privateConstructorUsedError;
-  @JsonKey(name: 'artist')
+  @JsonKey(name: 'artist', includeIfNull: false)
   ArtistWithAlbumsId3? get artist => throw _privateConstructorUsedError;
-  @JsonKey(name: 'album')
+  @JsonKey(name: 'album', includeIfNull: false)
   AlbumWithSongsId3? get album => throw _privateConstructorUsedError;
-  @JsonKey(name: 'song')
+  @JsonKey(name: 'song', includeIfNull: false)
   Child? get song => throw _privateConstructorUsedError;
-  @JsonKey(name: 'videos')
+  @JsonKey(name: 'videos', includeIfNull: false)
   Videos? get videos => throw _privateConstructorUsedError;
-  @JsonKey(name: 'videoInfo')
+  @JsonKey(name: 'videoInfo', includeIfNull: false)
   VideoInfo? get videoInfo => throw _privateConstructorUsedError;
-  @JsonKey(name: 'nowPlaying')
+  @JsonKey(name: 'nowPlaying', includeIfNull: false)
   NowPlaying? get nowPlaying => throw _privateConstructorUsedError;
-  @JsonKey(name: 'searchResult')
+  @JsonKey(name: 'searchResult', includeIfNull: false)
   SearchResult? get searchResult => throw _privateConstructorUsedError;
-  @JsonKey(name: 'searchResult2')
+  @JsonKey(name: 'searchResult2', includeIfNull: false)
   SearchResult2? get searchResult2 => throw _privateConstructorUsedError;
-  @JsonKey(name: 'searchResult3')
+  @JsonKey(name: 'searchResult3', includeIfNull: false)
   SearchResult3? get searchResult3 => throw _privateConstructorUsedError;
-  @JsonKey(name: 'playlists')
+  @JsonKey(name: 'playlists', includeIfNull: false)
   Playlists? get playlists => throw _privateConstructorUsedError;
-  @JsonKey(name: 'playlist')
+  @JsonKey(name: 'playlist', includeIfNull: false)
   PlaylistWithSongs? get playlist => throw _privateConstructorUsedError;
-  @JsonKey(name: 'jukeboxStatus')
+  @JsonKey(name: 'jukeboxStatus', includeIfNull: false)
   JukeboxStatus? get jukeboxStatus => throw _privateConstructorUsedError;
-  @JsonKey(name: 'jukeboxPlaylist')
+  @JsonKey(name: 'jukeboxPlaylist', includeIfNull: false)
   JukeboxPlaylist? get jukeboxPlaylist => throw _privateConstructorUsedError;
-  @JsonKey(name: 'license')
+  @JsonKey(name: 'license', includeIfNull: false)
   License? get license => throw _privateConstructorUsedError;
-  @JsonKey(name: 'users')
+  @JsonKey(name: 'users', includeIfNull: false)
   Users? get users => throw _privateConstructorUsedError;
-  @JsonKey(name: 'user')
+  @JsonKey(name: 'user', includeIfNull: false)
   User? get user => throw _privateConstructorUsedError;
-  @JsonKey(name: 'chatMessages')
+  @JsonKey(name: 'chatMessages', includeIfNull: false)
   ChatMessages? get chatMessages => throw _privateConstructorUsedError;
-  @JsonKey(name: 'albumList')
+  @JsonKey(name: 'albumList', includeIfNull: false)
   AlbumList? get albumList => throw _privateConstructorUsedError;
-  @JsonKey(name: 'albumList2')
+  @JsonKey(name: 'albumList2', includeIfNull: false)
   AlbumList2? get albumList2 => throw _privateConstructorUsedError;
-  @JsonKey(name: 'randomSongs')
+  @JsonKey(name: 'randomSongs', includeIfNull: false)
   Songs? get randomSongs => throw _privateConstructorUsedError;
-  @JsonKey(name: 'songsByGenre')
+  @JsonKey(name: 'songsByGenre', includeIfNull: false)
   Songs? get songsByGenre => throw _privateConstructorUsedError;
-  @JsonKey(name: 'lyrics')
+  @JsonKey(name: 'lyrics', includeIfNull: false)
   Lyrics? get lyrics => throw _privateConstructorUsedError;
-  @JsonKey(name: 'podcasts')
+  @JsonKey(name: 'podcasts', includeIfNull: false)
   Podcasts? get podcasts => throw _privateConstructorUsedError;
-  @JsonKey(name: 'newestPodcasts')
+  @JsonKey(name: 'newestPodcasts', includeIfNull: false)
   NewestPodcasts? get newestPodcasts => throw _privateConstructorUsedError;
-  @JsonKey(name: 'internetRadioStations')
+  @JsonKey(name: 'internetRadioStations', includeIfNull: false)
   InternetRadioStations? get internetRadioStations =>
       throw _privateConstructorUsedError;
-  @JsonKey(name: 'bookmarks')
+  @JsonKey(name: 'bookmarks', includeIfNull: false)
   Bookmarks? get bookmarks => throw _privateConstructorUsedError;
-  @JsonKey(name: 'playQueue')
+  @JsonKey(name: 'playQueue', includeIfNull: false)
   PlayQueue? get playQueue => throw _privateConstructorUsedError;
-  @JsonKey(name: 'shares')
+  @JsonKey(name: 'shares', includeIfNull: false)
   Shares? get shares => throw _privateConstructorUsedError;
-  @JsonKey(name: 'starred')
+  @JsonKey(name: 'starred', includeIfNull: false)
   Starred? get starred => throw _privateConstructorUsedError;
-  @JsonKey(name: 'starred2')
+  @JsonKey(name: 'starred2', includeIfNull: false)
   Starred2? get starred2 => throw _privateConstructorUsedError;
-  @JsonKey(name: 'albumInfo')
+  @JsonKey(name: 'albumInfo', includeIfNull: false)
   AlbumInfo? get albumInfo => throw _privateConstructorUsedError;
-  @JsonKey(name: 'artistInfo')
+  @JsonKey(name: 'artistInfo', includeIfNull: false)
   ArtistInfo? get artistInfo => throw _privateConstructorUsedError;
-  @JsonKey(name: 'artistInfo2')
+  @JsonKey(name: 'artistInfo2', includeIfNull: false)
   ArtistInfo2? get artistInfo2 => throw _privateConstructorUsedError;
-  @JsonKey(name: 'similarSongs')
+  @JsonKey(name: 'similarSongs', includeIfNull: false)
   SimilarSongs? get similarSongs => throw _privateConstructorUsedError;
-  @JsonKey(name: 'similarSongs2')
+  @JsonKey(name: 'similarSongs2', includeIfNull: false)
   SimilarSongs2? get similarSongs2 => throw _privateConstructorUsedError;
-  @JsonKey(name: 'topSongs')
+  @JsonKey(name: 'topSongs', includeIfNull: false)
   TopSongs? get topSongs => throw _privateConstructorUsedError;
-  @JsonKey(name: 'scanStatus')
+  @JsonKey(name: 'scanStatus', includeIfNull: false)
   ScanStatus? get scanStatus => throw _privateConstructorUsedError;
-  @JsonKey(name: 'error')
+  @JsonKey(name: 'error', includeIfNull: false)
   Error? get error => throw _privateConstructorUsedError;
 
-  /// Serializes this SubResponse to a JSON map.
+  /// Serializes this SubsonicResponse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $SubResponseCopyWith<SubResponse> get copyWith =>
+  $SubsonicResponseCopyWith<SubsonicResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $SubResponseCopyWith<$Res> {
-  factory $SubResponseCopyWith(
-          SubResponse value, $Res Function(SubResponse) then) =
-      _$SubResponseCopyWithImpl<$Res, SubResponse>;
+abstract class $SubsonicResponseCopyWith<$Res> {
+  factory $SubsonicResponseCopyWith(
+          SubsonicResponse value, $Res Function(SubsonicResponse) then) =
+      _$SubsonicResponseCopyWithImpl<$Res, SubsonicResponse>;
   @useResult
   $Res call(
       {@JsonKey(name: 'status') ResponseStatus status,
       @JsonKey(name: 'version') String version,
-      @JsonKey(name: 'musicFolders') MusicFolders? musicFolders,
-      @JsonKey(name: 'indexes') Indexes? indexes,
-      @JsonKey(name: 'directory') Directory? directory,
-      @JsonKey(name: 'genres') Genres? genres,
-      @JsonKey(name: 'artists') ArtistsId3? artists,
-      @JsonKey(name: 'artist') ArtistWithAlbumsId3? artist,
-      @JsonKey(name: 'album') AlbumWithSongsId3? album,
-      @JsonKey(name: 'song') Child? song,
-      @JsonKey(name: 'videos') Videos? videos,
-      @JsonKey(name: 'videoInfo') VideoInfo? videoInfo,
-      @JsonKey(name: 'nowPlaying') NowPlaying? nowPlaying,
-      @JsonKey(name: 'searchResult') SearchResult? searchResult,
-      @JsonKey(name: 'searchResult2') SearchResult2? searchResult2,
-      @JsonKey(name: 'searchResult3') SearchResult3? searchResult3,
-      @JsonKey(name: 'playlists') Playlists? playlists,
-      @JsonKey(name: 'playlist') PlaylistWithSongs? playlist,
-      @JsonKey(name: 'jukeboxStatus') JukeboxStatus? jukeboxStatus,
-      @JsonKey(name: 'jukeboxPlaylist') JukeboxPlaylist? jukeboxPlaylist,
-      @JsonKey(name: 'license') License? license,
-      @JsonKey(name: 'users') Users? users,
-      @JsonKey(name: 'user') User? user,
-      @JsonKey(name: 'chatMessages') ChatMessages? chatMessages,
-      @JsonKey(name: 'albumList') AlbumList? albumList,
-      @JsonKey(name: 'albumList2') AlbumList2? albumList2,
-      @JsonKey(name: 'randomSongs') Songs? randomSongs,
-      @JsonKey(name: 'songsByGenre') Songs? songsByGenre,
-      @JsonKey(name: 'lyrics') Lyrics? lyrics,
-      @JsonKey(name: 'podcasts') Podcasts? podcasts,
-      @JsonKey(name: 'newestPodcasts') NewestPodcasts? newestPodcasts,
-      @JsonKey(name: 'internetRadioStations')
+      @JsonKey(name: 'musicFolders', includeIfNull: false)
+      MusicFolders? musicFolders,
+      @JsonKey(name: 'indexes', includeIfNull: false) Indexes? indexes,
+      @JsonKey(name: 'directory', includeIfNull: false) Directory? directory,
+      @JsonKey(name: 'genres', includeIfNull: false) Genres? genres,
+      @JsonKey(name: 'artists', includeIfNull: false) ArtistsId3? artists,
+      @JsonKey(name: 'artist', includeIfNull: false)
+      ArtistWithAlbumsId3? artist,
+      @JsonKey(name: 'album', includeIfNull: false) AlbumWithSongsId3? album,
+      @JsonKey(name: 'song', includeIfNull: false) Child? song,
+      @JsonKey(name: 'videos', includeIfNull: false) Videos? videos,
+      @JsonKey(name: 'videoInfo', includeIfNull: false) VideoInfo? videoInfo,
+      @JsonKey(name: 'nowPlaying', includeIfNull: false) NowPlaying? nowPlaying,
+      @JsonKey(name: 'searchResult', includeIfNull: false)
+      SearchResult? searchResult,
+      @JsonKey(name: 'searchResult2', includeIfNull: false)
+      SearchResult2? searchResult2,
+      @JsonKey(name: 'searchResult3', includeIfNull: false)
+      SearchResult3? searchResult3,
+      @JsonKey(name: 'playlists', includeIfNull: false) Playlists? playlists,
+      @JsonKey(name: 'playlist', includeIfNull: false)
+      PlaylistWithSongs? playlist,
+      @JsonKey(name: 'jukeboxStatus', includeIfNull: false)
+      JukeboxStatus? jukeboxStatus,
+      @JsonKey(name: 'jukeboxPlaylist', includeIfNull: false)
+      JukeboxPlaylist? jukeboxPlaylist,
+      @JsonKey(name: 'license', includeIfNull: false) License? license,
+      @JsonKey(name: 'users', includeIfNull: false) Users? users,
+      @JsonKey(name: 'user', includeIfNull: false) User? user,
+      @JsonKey(name: 'chatMessages', includeIfNull: false)
+      ChatMessages? chatMessages,
+      @JsonKey(name: 'albumList', includeIfNull: false) AlbumList? albumList,
+      @JsonKey(name: 'albumList2', includeIfNull: false) AlbumList2? albumList2,
+      @JsonKey(name: 'randomSongs', includeIfNull: false) Songs? randomSongs,
+      @JsonKey(name: 'songsByGenre', includeIfNull: false) Songs? songsByGenre,
+      @JsonKey(name: 'lyrics', includeIfNull: false) Lyrics? lyrics,
+      @JsonKey(name: 'podcasts', includeIfNull: false) Podcasts? podcasts,
+      @JsonKey(name: 'newestPodcasts', includeIfNull: false)
+      NewestPodcasts? newestPodcasts,
+      @JsonKey(name: 'internetRadioStations', includeIfNull: false)
       InternetRadioStations? internetRadioStations,
-      @JsonKey(name: 'bookmarks') Bookmarks? bookmarks,
-      @JsonKey(name: 'playQueue') PlayQueue? playQueue,
-      @JsonKey(name: 'shares') Shares? shares,
-      @JsonKey(name: 'starred') Starred? starred,
-      @JsonKey(name: 'starred2') Starred2? starred2,
-      @JsonKey(name: 'albumInfo') AlbumInfo? albumInfo,
-      @JsonKey(name: 'artistInfo') ArtistInfo? artistInfo,
-      @JsonKey(name: 'artistInfo2') ArtistInfo2? artistInfo2,
-      @JsonKey(name: 'similarSongs') SimilarSongs? similarSongs,
-      @JsonKey(name: 'similarSongs2') SimilarSongs2? similarSongs2,
-      @JsonKey(name: 'topSongs') TopSongs? topSongs,
-      @JsonKey(name: 'scanStatus') ScanStatus? scanStatus,
-      @JsonKey(name: 'error') Error? error});
+      @JsonKey(name: 'bookmarks', includeIfNull: false) Bookmarks? bookmarks,
+      @JsonKey(name: 'playQueue', includeIfNull: false) PlayQueue? playQueue,
+      @JsonKey(name: 'shares', includeIfNull: false) Shares? shares,
+      @JsonKey(name: 'starred', includeIfNull: false) Starred? starred,
+      @JsonKey(name: 'starred2', includeIfNull: false) Starred2? starred2,
+      @JsonKey(name: 'albumInfo', includeIfNull: false) AlbumInfo? albumInfo,
+      @JsonKey(name: 'artistInfo', includeIfNull: false) ArtistInfo? artistInfo,
+      @JsonKey(name: 'artistInfo2', includeIfNull: false)
+      ArtistInfo2? artistInfo2,
+      @JsonKey(name: 'similarSongs', includeIfNull: false)
+      SimilarSongs? similarSongs,
+      @JsonKey(name: 'similarSongs2', includeIfNull: false)
+      SimilarSongs2? similarSongs2,
+      @JsonKey(name: 'topSongs', includeIfNull: false) TopSongs? topSongs,
+      @JsonKey(name: 'scanStatus', includeIfNull: false) ScanStatus? scanStatus,
+      @JsonKey(name: 'error', includeIfNull: false) Error? error});
 
   $MusicFoldersCopyWith<$Res>? get musicFolders;
   $IndexesCopyWith<$Res>? get indexes;
@@ -222,16 +235,16 @@ abstract class $SubResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
-    implements $SubResponseCopyWith<$Res> {
-  _$SubResponseCopyWithImpl(this._value, this._then);
+class _$SubsonicResponseCopyWithImpl<$Res, $Val extends SubsonicResponse>
+    implements $SubsonicResponseCopyWith<$Res> {
+  _$SubsonicResponseCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -466,7 +479,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     ) as $Val);
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -480,7 +493,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -494,7 +507,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -508,7 +521,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -522,7 +535,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -536,7 +549,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -550,7 +563,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -564,7 +577,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -578,7 +591,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -592,7 +605,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -606,7 +619,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -620,7 +633,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -634,7 +647,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -648,7 +661,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -662,7 +675,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -676,7 +689,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -690,7 +703,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -704,7 +717,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -718,7 +731,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -732,7 +745,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -746,7 +759,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -760,7 +773,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -774,7 +787,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -788,7 +801,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -802,7 +815,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -816,7 +829,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -830,7 +843,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -844,7 +857,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -858,7 +871,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -872,7 +885,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -887,7 +900,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -901,7 +914,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -915,7 +928,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -929,7 +942,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -943,7 +956,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -957,7 +970,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -971,7 +984,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -985,7 +998,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -999,7 +1012,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -1013,7 +1026,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -1027,7 +1040,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -1041,7 +1054,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -1055,7 +1068,7 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
     });
   }
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -1071,60 +1084,73 @@ class _$SubResponseCopyWithImpl<$Res, $Val extends SubResponse>
 }
 
 /// @nodoc
-abstract class _$$ResponseImplCopyWith<$Res>
-    implements $SubResponseCopyWith<$Res> {
-  factory _$$ResponseImplCopyWith(
-          _$ResponseImpl value, $Res Function(_$ResponseImpl) then) =
-      __$$ResponseImplCopyWithImpl<$Res>;
+abstract class _$$SubsonicResponseImplCopyWith<$Res>
+    implements $SubsonicResponseCopyWith<$Res> {
+  factory _$$SubsonicResponseImplCopyWith(_$SubsonicResponseImpl value,
+          $Res Function(_$SubsonicResponseImpl) then) =
+      __$$SubsonicResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {@JsonKey(name: 'status') ResponseStatus status,
       @JsonKey(name: 'version') String version,
-      @JsonKey(name: 'musicFolders') MusicFolders? musicFolders,
-      @JsonKey(name: 'indexes') Indexes? indexes,
-      @JsonKey(name: 'directory') Directory? directory,
-      @JsonKey(name: 'genres') Genres? genres,
-      @JsonKey(name: 'artists') ArtistsId3? artists,
-      @JsonKey(name: 'artist') ArtistWithAlbumsId3? artist,
-      @JsonKey(name: 'album') AlbumWithSongsId3? album,
-      @JsonKey(name: 'song') Child? song,
-      @JsonKey(name: 'videos') Videos? videos,
-      @JsonKey(name: 'videoInfo') VideoInfo? videoInfo,
-      @JsonKey(name: 'nowPlaying') NowPlaying? nowPlaying,
-      @JsonKey(name: 'searchResult') SearchResult? searchResult,
-      @JsonKey(name: 'searchResult2') SearchResult2? searchResult2,
-      @JsonKey(name: 'searchResult3') SearchResult3? searchResult3,
-      @JsonKey(name: 'playlists') Playlists? playlists,
-      @JsonKey(name: 'playlist') PlaylistWithSongs? playlist,
-      @JsonKey(name: 'jukeboxStatus') JukeboxStatus? jukeboxStatus,
-      @JsonKey(name: 'jukeboxPlaylist') JukeboxPlaylist? jukeboxPlaylist,
-      @JsonKey(name: 'license') License? license,
-      @JsonKey(name: 'users') Users? users,
-      @JsonKey(name: 'user') User? user,
-      @JsonKey(name: 'chatMessages') ChatMessages? chatMessages,
-      @JsonKey(name: 'albumList') AlbumList? albumList,
-      @JsonKey(name: 'albumList2') AlbumList2? albumList2,
-      @JsonKey(name: 'randomSongs') Songs? randomSongs,
-      @JsonKey(name: 'songsByGenre') Songs? songsByGenre,
-      @JsonKey(name: 'lyrics') Lyrics? lyrics,
-      @JsonKey(name: 'podcasts') Podcasts? podcasts,
-      @JsonKey(name: 'newestPodcasts') NewestPodcasts? newestPodcasts,
-      @JsonKey(name: 'internetRadioStations')
+      @JsonKey(name: 'musicFolders', includeIfNull: false)
+      MusicFolders? musicFolders,
+      @JsonKey(name: 'indexes', includeIfNull: false) Indexes? indexes,
+      @JsonKey(name: 'directory', includeIfNull: false) Directory? directory,
+      @JsonKey(name: 'genres', includeIfNull: false) Genres? genres,
+      @JsonKey(name: 'artists', includeIfNull: false) ArtistsId3? artists,
+      @JsonKey(name: 'artist', includeIfNull: false)
+      ArtistWithAlbumsId3? artist,
+      @JsonKey(name: 'album', includeIfNull: false) AlbumWithSongsId3? album,
+      @JsonKey(name: 'song', includeIfNull: false) Child? song,
+      @JsonKey(name: 'videos', includeIfNull: false) Videos? videos,
+      @JsonKey(name: 'videoInfo', includeIfNull: false) VideoInfo? videoInfo,
+      @JsonKey(name: 'nowPlaying', includeIfNull: false) NowPlaying? nowPlaying,
+      @JsonKey(name: 'searchResult', includeIfNull: false)
+      SearchResult? searchResult,
+      @JsonKey(name: 'searchResult2', includeIfNull: false)
+      SearchResult2? searchResult2,
+      @JsonKey(name: 'searchResult3', includeIfNull: false)
+      SearchResult3? searchResult3,
+      @JsonKey(name: 'playlists', includeIfNull: false) Playlists? playlists,
+      @JsonKey(name: 'playlist', includeIfNull: false)
+      PlaylistWithSongs? playlist,
+      @JsonKey(name: 'jukeboxStatus', includeIfNull: false)
+      JukeboxStatus? jukeboxStatus,
+      @JsonKey(name: 'jukeboxPlaylist', includeIfNull: false)
+      JukeboxPlaylist? jukeboxPlaylist,
+      @JsonKey(name: 'license', includeIfNull: false) License? license,
+      @JsonKey(name: 'users', includeIfNull: false) Users? users,
+      @JsonKey(name: 'user', includeIfNull: false) User? user,
+      @JsonKey(name: 'chatMessages', includeIfNull: false)
+      ChatMessages? chatMessages,
+      @JsonKey(name: 'albumList', includeIfNull: false) AlbumList? albumList,
+      @JsonKey(name: 'albumList2', includeIfNull: false) AlbumList2? albumList2,
+      @JsonKey(name: 'randomSongs', includeIfNull: false) Songs? randomSongs,
+      @JsonKey(name: 'songsByGenre', includeIfNull: false) Songs? songsByGenre,
+      @JsonKey(name: 'lyrics', includeIfNull: false) Lyrics? lyrics,
+      @JsonKey(name: 'podcasts', includeIfNull: false) Podcasts? podcasts,
+      @JsonKey(name: 'newestPodcasts', includeIfNull: false)
+      NewestPodcasts? newestPodcasts,
+      @JsonKey(name: 'internetRadioStations', includeIfNull: false)
       InternetRadioStations? internetRadioStations,
-      @JsonKey(name: 'bookmarks') Bookmarks? bookmarks,
-      @JsonKey(name: 'playQueue') PlayQueue? playQueue,
-      @JsonKey(name: 'shares') Shares? shares,
-      @JsonKey(name: 'starred') Starred? starred,
-      @JsonKey(name: 'starred2') Starred2? starred2,
-      @JsonKey(name: 'albumInfo') AlbumInfo? albumInfo,
-      @JsonKey(name: 'artistInfo') ArtistInfo? artistInfo,
-      @JsonKey(name: 'artistInfo2') ArtistInfo2? artistInfo2,
-      @JsonKey(name: 'similarSongs') SimilarSongs? similarSongs,
-      @JsonKey(name: 'similarSongs2') SimilarSongs2? similarSongs2,
-      @JsonKey(name: 'topSongs') TopSongs? topSongs,
-      @JsonKey(name: 'scanStatus') ScanStatus? scanStatus,
-      @JsonKey(name: 'error') Error? error});
+      @JsonKey(name: 'bookmarks', includeIfNull: false) Bookmarks? bookmarks,
+      @JsonKey(name: 'playQueue', includeIfNull: false) PlayQueue? playQueue,
+      @JsonKey(name: 'shares', includeIfNull: false) Shares? shares,
+      @JsonKey(name: 'starred', includeIfNull: false) Starred? starred,
+      @JsonKey(name: 'starred2', includeIfNull: false) Starred2? starred2,
+      @JsonKey(name: 'albumInfo', includeIfNull: false) AlbumInfo? albumInfo,
+      @JsonKey(name: 'artistInfo', includeIfNull: false) ArtistInfo? artistInfo,
+      @JsonKey(name: 'artistInfo2', includeIfNull: false)
+      ArtistInfo2? artistInfo2,
+      @JsonKey(name: 'similarSongs', includeIfNull: false)
+      SimilarSongs? similarSongs,
+      @JsonKey(name: 'similarSongs2', includeIfNull: false)
+      SimilarSongs2? similarSongs2,
+      @JsonKey(name: 'topSongs', includeIfNull: false) TopSongs? topSongs,
+      @JsonKey(name: 'scanStatus', includeIfNull: false) ScanStatus? scanStatus,
+      @JsonKey(name: 'error', includeIfNull: false) Error? error});
 
   @override
   $MusicFoldersCopyWith<$Res>? get musicFolders;
@@ -1215,14 +1241,14 @@ abstract class _$$ResponseImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ResponseImplCopyWithImpl<$Res>
-    extends _$SubResponseCopyWithImpl<$Res, _$ResponseImpl>
-    implements _$$ResponseImplCopyWith<$Res> {
-  __$$ResponseImplCopyWithImpl(
-      _$ResponseImpl _value, $Res Function(_$ResponseImpl) _then)
+class __$$SubsonicResponseImplCopyWithImpl<$Res>
+    extends _$SubsonicResponseCopyWithImpl<$Res, _$SubsonicResponseImpl>
+    implements _$$SubsonicResponseImplCopyWith<$Res> {
+  __$$SubsonicResponseImplCopyWithImpl(_$SubsonicResponseImpl _value,
+      $Res Function(_$SubsonicResponseImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -1273,7 +1299,7 @@ class __$$ResponseImplCopyWithImpl<$Res>
     Object? scanStatus = freezed,
     Object? error = freezed,
   }) {
-    return _then(_$ResponseImpl(
+    return _then(_$SubsonicResponseImpl(
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -1460,56 +1486,59 @@ class __$$ResponseImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$ResponseImpl implements _Response {
-  const _$ResponseImpl(
+class _$SubsonicResponseImpl implements _SubsonicResponse {
+  const _$SubsonicResponseImpl(
       {@JsonKey(name: 'status') required this.status,
       @JsonKey(name: 'version') required this.version,
-      @JsonKey(name: 'musicFolders') this.musicFolders,
-      @JsonKey(name: 'indexes') this.indexes,
-      @JsonKey(name: 'directory') this.directory,
-      @JsonKey(name: 'genres') this.genres,
-      @JsonKey(name: 'artists') this.artists,
-      @JsonKey(name: 'artist') this.artist,
-      @JsonKey(name: 'album') this.album,
-      @JsonKey(name: 'song') this.song,
-      @JsonKey(name: 'videos') this.videos,
-      @JsonKey(name: 'videoInfo') this.videoInfo,
-      @JsonKey(name: 'nowPlaying') this.nowPlaying,
-      @JsonKey(name: 'searchResult') this.searchResult,
-      @JsonKey(name: 'searchResult2') this.searchResult2,
-      @JsonKey(name: 'searchResult3') this.searchResult3,
-      @JsonKey(name: 'playlists') this.playlists,
-      @JsonKey(name: 'playlist') this.playlist,
-      @JsonKey(name: 'jukeboxStatus') this.jukeboxStatus,
-      @JsonKey(name: 'jukeboxPlaylist') this.jukeboxPlaylist,
-      @JsonKey(name: 'license') this.license,
-      @JsonKey(name: 'users') this.users,
-      @JsonKey(name: 'user') this.user,
-      @JsonKey(name: 'chatMessages') this.chatMessages,
-      @JsonKey(name: 'albumList') this.albumList,
-      @JsonKey(name: 'albumList2') this.albumList2,
-      @JsonKey(name: 'randomSongs') this.randomSongs,
-      @JsonKey(name: 'songsByGenre') this.songsByGenre,
-      @JsonKey(name: 'lyrics') this.lyrics,
-      @JsonKey(name: 'podcasts') this.podcasts,
-      @JsonKey(name: 'newestPodcasts') this.newestPodcasts,
-      @JsonKey(name: 'internetRadioStations') this.internetRadioStations,
-      @JsonKey(name: 'bookmarks') this.bookmarks,
-      @JsonKey(name: 'playQueue') this.playQueue,
-      @JsonKey(name: 'shares') this.shares,
-      @JsonKey(name: 'starred') this.starred,
-      @JsonKey(name: 'starred2') this.starred2,
-      @JsonKey(name: 'albumInfo') this.albumInfo,
-      @JsonKey(name: 'artistInfo') this.artistInfo,
-      @JsonKey(name: 'artistInfo2') this.artistInfo2,
-      @JsonKey(name: 'similarSongs') this.similarSongs,
-      @JsonKey(name: 'similarSongs2') this.similarSongs2,
-      @JsonKey(name: 'topSongs') this.topSongs,
-      @JsonKey(name: 'scanStatus') this.scanStatus,
-      @JsonKey(name: 'error') this.error});
+      @JsonKey(name: 'musicFolders', includeIfNull: false) this.musicFolders,
+      @JsonKey(name: 'indexes', includeIfNull: false) this.indexes,
+      @JsonKey(name: 'directory', includeIfNull: false) this.directory,
+      @JsonKey(name: 'genres', includeIfNull: false) this.genres,
+      @JsonKey(name: 'artists', includeIfNull: false) this.artists,
+      @JsonKey(name: 'artist', includeIfNull: false) this.artist,
+      @JsonKey(name: 'album', includeIfNull: false) this.album,
+      @JsonKey(name: 'song', includeIfNull: false) this.song,
+      @JsonKey(name: 'videos', includeIfNull: false) this.videos,
+      @JsonKey(name: 'videoInfo', includeIfNull: false) this.videoInfo,
+      @JsonKey(name: 'nowPlaying', includeIfNull: false) this.nowPlaying,
+      @JsonKey(name: 'searchResult', includeIfNull: false) this.searchResult,
+      @JsonKey(name: 'searchResult2', includeIfNull: false) this.searchResult2,
+      @JsonKey(name: 'searchResult3', includeIfNull: false) this.searchResult3,
+      @JsonKey(name: 'playlists', includeIfNull: false) this.playlists,
+      @JsonKey(name: 'playlist', includeIfNull: false) this.playlist,
+      @JsonKey(name: 'jukeboxStatus', includeIfNull: false) this.jukeboxStatus,
+      @JsonKey(name: 'jukeboxPlaylist', includeIfNull: false)
+      this.jukeboxPlaylist,
+      @JsonKey(name: 'license', includeIfNull: false) this.license,
+      @JsonKey(name: 'users', includeIfNull: false) this.users,
+      @JsonKey(name: 'user', includeIfNull: false) this.user,
+      @JsonKey(name: 'chatMessages', includeIfNull: false) this.chatMessages,
+      @JsonKey(name: 'albumList', includeIfNull: false) this.albumList,
+      @JsonKey(name: 'albumList2', includeIfNull: false) this.albumList2,
+      @JsonKey(name: 'randomSongs', includeIfNull: false) this.randomSongs,
+      @JsonKey(name: 'songsByGenre', includeIfNull: false) this.songsByGenre,
+      @JsonKey(name: 'lyrics', includeIfNull: false) this.lyrics,
+      @JsonKey(name: 'podcasts', includeIfNull: false) this.podcasts,
+      @JsonKey(name: 'newestPodcasts', includeIfNull: false)
+      this.newestPodcasts,
+      @JsonKey(name: 'internetRadioStations', includeIfNull: false)
+      this.internetRadioStations,
+      @JsonKey(name: 'bookmarks', includeIfNull: false) this.bookmarks,
+      @JsonKey(name: 'playQueue', includeIfNull: false) this.playQueue,
+      @JsonKey(name: 'shares', includeIfNull: false) this.shares,
+      @JsonKey(name: 'starred', includeIfNull: false) this.starred,
+      @JsonKey(name: 'starred2', includeIfNull: false) this.starred2,
+      @JsonKey(name: 'albumInfo', includeIfNull: false) this.albumInfo,
+      @JsonKey(name: 'artistInfo', includeIfNull: false) this.artistInfo,
+      @JsonKey(name: 'artistInfo2', includeIfNull: false) this.artistInfo2,
+      @JsonKey(name: 'similarSongs', includeIfNull: false) this.similarSongs,
+      @JsonKey(name: 'similarSongs2', includeIfNull: false) this.similarSongs2,
+      @JsonKey(name: 'topSongs', includeIfNull: false) this.topSongs,
+      @JsonKey(name: 'scanStatus', includeIfNull: false) this.scanStatus,
+      @JsonKey(name: 'error', includeIfNull: false) this.error});
 
-  factory _$ResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ResponseImplFromJson(json);
+  factory _$SubsonicResponseImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SubsonicResponseImplFromJson(json);
 
   @override
   @JsonKey(name: 'status')
@@ -1518,145 +1547,145 @@ class _$ResponseImpl implements _Response {
   @JsonKey(name: 'version')
   final String version;
   @override
-  @JsonKey(name: 'musicFolders')
+  @JsonKey(name: 'musicFolders', includeIfNull: false)
   final MusicFolders? musicFolders;
   @override
-  @JsonKey(name: 'indexes')
+  @JsonKey(name: 'indexes', includeIfNull: false)
   final Indexes? indexes;
   @override
-  @JsonKey(name: 'directory')
+  @JsonKey(name: 'directory', includeIfNull: false)
   final Directory? directory;
   @override
-  @JsonKey(name: 'genres')
+  @JsonKey(name: 'genres', includeIfNull: false)
   final Genres? genres;
   @override
-  @JsonKey(name: 'artists')
+  @JsonKey(name: 'artists', includeIfNull: false)
   final ArtistsId3? artists;
   @override
-  @JsonKey(name: 'artist')
+  @JsonKey(name: 'artist', includeIfNull: false)
   final ArtistWithAlbumsId3? artist;
   @override
-  @JsonKey(name: 'album')
+  @JsonKey(name: 'album', includeIfNull: false)
   final AlbumWithSongsId3? album;
   @override
-  @JsonKey(name: 'song')
+  @JsonKey(name: 'song', includeIfNull: false)
   final Child? song;
   @override
-  @JsonKey(name: 'videos')
+  @JsonKey(name: 'videos', includeIfNull: false)
   final Videos? videos;
   @override
-  @JsonKey(name: 'videoInfo')
+  @JsonKey(name: 'videoInfo', includeIfNull: false)
   final VideoInfo? videoInfo;
   @override
-  @JsonKey(name: 'nowPlaying')
+  @JsonKey(name: 'nowPlaying', includeIfNull: false)
   final NowPlaying? nowPlaying;
   @override
-  @JsonKey(name: 'searchResult')
+  @JsonKey(name: 'searchResult', includeIfNull: false)
   final SearchResult? searchResult;
   @override
-  @JsonKey(name: 'searchResult2')
+  @JsonKey(name: 'searchResult2', includeIfNull: false)
   final SearchResult2? searchResult2;
   @override
-  @JsonKey(name: 'searchResult3')
+  @JsonKey(name: 'searchResult3', includeIfNull: false)
   final SearchResult3? searchResult3;
   @override
-  @JsonKey(name: 'playlists')
+  @JsonKey(name: 'playlists', includeIfNull: false)
   final Playlists? playlists;
   @override
-  @JsonKey(name: 'playlist')
+  @JsonKey(name: 'playlist', includeIfNull: false)
   final PlaylistWithSongs? playlist;
   @override
-  @JsonKey(name: 'jukeboxStatus')
+  @JsonKey(name: 'jukeboxStatus', includeIfNull: false)
   final JukeboxStatus? jukeboxStatus;
   @override
-  @JsonKey(name: 'jukeboxPlaylist')
+  @JsonKey(name: 'jukeboxPlaylist', includeIfNull: false)
   final JukeboxPlaylist? jukeboxPlaylist;
   @override
-  @JsonKey(name: 'license')
+  @JsonKey(name: 'license', includeIfNull: false)
   final License? license;
   @override
-  @JsonKey(name: 'users')
+  @JsonKey(name: 'users', includeIfNull: false)
   final Users? users;
   @override
-  @JsonKey(name: 'user')
+  @JsonKey(name: 'user', includeIfNull: false)
   final User? user;
   @override
-  @JsonKey(name: 'chatMessages')
+  @JsonKey(name: 'chatMessages', includeIfNull: false)
   final ChatMessages? chatMessages;
   @override
-  @JsonKey(name: 'albumList')
+  @JsonKey(name: 'albumList', includeIfNull: false)
   final AlbumList? albumList;
   @override
-  @JsonKey(name: 'albumList2')
+  @JsonKey(name: 'albumList2', includeIfNull: false)
   final AlbumList2? albumList2;
   @override
-  @JsonKey(name: 'randomSongs')
+  @JsonKey(name: 'randomSongs', includeIfNull: false)
   final Songs? randomSongs;
   @override
-  @JsonKey(name: 'songsByGenre')
+  @JsonKey(name: 'songsByGenre', includeIfNull: false)
   final Songs? songsByGenre;
   @override
-  @JsonKey(name: 'lyrics')
+  @JsonKey(name: 'lyrics', includeIfNull: false)
   final Lyrics? lyrics;
   @override
-  @JsonKey(name: 'podcasts')
+  @JsonKey(name: 'podcasts', includeIfNull: false)
   final Podcasts? podcasts;
   @override
-  @JsonKey(name: 'newestPodcasts')
+  @JsonKey(name: 'newestPodcasts', includeIfNull: false)
   final NewestPodcasts? newestPodcasts;
   @override
-  @JsonKey(name: 'internetRadioStations')
+  @JsonKey(name: 'internetRadioStations', includeIfNull: false)
   final InternetRadioStations? internetRadioStations;
   @override
-  @JsonKey(name: 'bookmarks')
+  @JsonKey(name: 'bookmarks', includeIfNull: false)
   final Bookmarks? bookmarks;
   @override
-  @JsonKey(name: 'playQueue')
+  @JsonKey(name: 'playQueue', includeIfNull: false)
   final PlayQueue? playQueue;
   @override
-  @JsonKey(name: 'shares')
+  @JsonKey(name: 'shares', includeIfNull: false)
   final Shares? shares;
   @override
-  @JsonKey(name: 'starred')
+  @JsonKey(name: 'starred', includeIfNull: false)
   final Starred? starred;
   @override
-  @JsonKey(name: 'starred2')
+  @JsonKey(name: 'starred2', includeIfNull: false)
   final Starred2? starred2;
   @override
-  @JsonKey(name: 'albumInfo')
+  @JsonKey(name: 'albumInfo', includeIfNull: false)
   final AlbumInfo? albumInfo;
   @override
-  @JsonKey(name: 'artistInfo')
+  @JsonKey(name: 'artistInfo', includeIfNull: false)
   final ArtistInfo? artistInfo;
   @override
-  @JsonKey(name: 'artistInfo2')
+  @JsonKey(name: 'artistInfo2', includeIfNull: false)
   final ArtistInfo2? artistInfo2;
   @override
-  @JsonKey(name: 'similarSongs')
+  @JsonKey(name: 'similarSongs', includeIfNull: false)
   final SimilarSongs? similarSongs;
   @override
-  @JsonKey(name: 'similarSongs2')
+  @JsonKey(name: 'similarSongs2', includeIfNull: false)
   final SimilarSongs2? similarSongs2;
   @override
-  @JsonKey(name: 'topSongs')
+  @JsonKey(name: 'topSongs', includeIfNull: false)
   final TopSongs? topSongs;
   @override
-  @JsonKey(name: 'scanStatus')
+  @JsonKey(name: 'scanStatus', includeIfNull: false)
   final ScanStatus? scanStatus;
   @override
-  @JsonKey(name: 'error')
+  @JsonKey(name: 'error', includeIfNull: false)
   final Error? error;
 
   @override
   String toString() {
-    return 'SubResponse(status: $status, version: $version, musicFolders: $musicFolders, indexes: $indexes, directory: $directory, genres: $genres, artists: $artists, artist: $artist, album: $album, song: $song, videos: $videos, videoInfo: $videoInfo, nowPlaying: $nowPlaying, searchResult: $searchResult, searchResult2: $searchResult2, searchResult3: $searchResult3, playlists: $playlists, playlist: $playlist, jukeboxStatus: $jukeboxStatus, jukeboxPlaylist: $jukeboxPlaylist, license: $license, users: $users, user: $user, chatMessages: $chatMessages, albumList: $albumList, albumList2: $albumList2, randomSongs: $randomSongs, songsByGenre: $songsByGenre, lyrics: $lyrics, podcasts: $podcasts, newestPodcasts: $newestPodcasts, internetRadioStations: $internetRadioStations, bookmarks: $bookmarks, playQueue: $playQueue, shares: $shares, starred: $starred, starred2: $starred2, albumInfo: $albumInfo, artistInfo: $artistInfo, artistInfo2: $artistInfo2, similarSongs: $similarSongs, similarSongs2: $similarSongs2, topSongs: $topSongs, scanStatus: $scanStatus, error: $error)';
+    return 'SubsonicResponse(status: $status, version: $version, musicFolders: $musicFolders, indexes: $indexes, directory: $directory, genres: $genres, artists: $artists, artist: $artist, album: $album, song: $song, videos: $videos, videoInfo: $videoInfo, nowPlaying: $nowPlaying, searchResult: $searchResult, searchResult2: $searchResult2, searchResult3: $searchResult3, playlists: $playlists, playlist: $playlist, jukeboxStatus: $jukeboxStatus, jukeboxPlaylist: $jukeboxPlaylist, license: $license, users: $users, user: $user, chatMessages: $chatMessages, albumList: $albumList, albumList2: $albumList2, randomSongs: $randomSongs, songsByGenre: $songsByGenre, lyrics: $lyrics, podcasts: $podcasts, newestPodcasts: $newestPodcasts, internetRadioStations: $internetRadioStations, bookmarks: $bookmarks, playQueue: $playQueue, shares: $shares, starred: $starred, starred2: $starred2, albumInfo: $albumInfo, artistInfo: $artistInfo, artistInfo2: $artistInfo2, similarSongs: $similarSongs, similarSongs2: $similarSongs2, topSongs: $topSongs, scanStatus: $scanStatus, error: $error)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ResponseImpl &&
+            other is _$SubsonicResponseImpl &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.version, version) || other.version == version) &&
             (identical(other.musicFolders, musicFolders) ||
@@ -1784,73 +1813,102 @@ class _$ResponseImpl implements _Response {
         error
       ]);
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$ResponseImplCopyWith<_$ResponseImpl> get copyWith =>
-      __$$ResponseImplCopyWithImpl<_$ResponseImpl>(this, _$identity);
+  _$$SubsonicResponseImplCopyWith<_$SubsonicResponseImpl> get copyWith =>
+      __$$SubsonicResponseImplCopyWithImpl<_$SubsonicResponseImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$ResponseImplToJson(
+    return _$$SubsonicResponseImplToJson(
       this,
     );
   }
 }
 
-abstract class _Response implements SubResponse {
-  const factory _Response(
+abstract class _SubsonicResponse implements SubsonicResponse {
+  const factory _SubsonicResponse(
       {@JsonKey(name: 'status') required final ResponseStatus status,
       @JsonKey(name: 'version') required final String version,
-      @JsonKey(name: 'musicFolders') final MusicFolders? musicFolders,
-      @JsonKey(name: 'indexes') final Indexes? indexes,
-      @JsonKey(name: 'directory') final Directory? directory,
-      @JsonKey(name: 'genres') final Genres? genres,
-      @JsonKey(name: 'artists') final ArtistsId3? artists,
-      @JsonKey(name: 'artist') final ArtistWithAlbumsId3? artist,
-      @JsonKey(name: 'album') final AlbumWithSongsId3? album,
-      @JsonKey(name: 'song') final Child? song,
-      @JsonKey(name: 'videos') final Videos? videos,
-      @JsonKey(name: 'videoInfo') final VideoInfo? videoInfo,
-      @JsonKey(name: 'nowPlaying') final NowPlaying? nowPlaying,
-      @JsonKey(name: 'searchResult') final SearchResult? searchResult,
-      @JsonKey(name: 'searchResult2') final SearchResult2? searchResult2,
-      @JsonKey(name: 'searchResult3') final SearchResult3? searchResult3,
-      @JsonKey(name: 'playlists') final Playlists? playlists,
-      @JsonKey(name: 'playlist') final PlaylistWithSongs? playlist,
-      @JsonKey(name: 'jukeboxStatus') final JukeboxStatus? jukeboxStatus,
-      @JsonKey(name: 'jukeboxPlaylist') final JukeboxPlaylist? jukeboxPlaylist,
-      @JsonKey(name: 'license') final License? license,
-      @JsonKey(name: 'users') final Users? users,
-      @JsonKey(name: 'user') final User? user,
-      @JsonKey(name: 'chatMessages') final ChatMessages? chatMessages,
-      @JsonKey(name: 'albumList') final AlbumList? albumList,
-      @JsonKey(name: 'albumList2') final AlbumList2? albumList2,
-      @JsonKey(name: 'randomSongs') final Songs? randomSongs,
-      @JsonKey(name: 'songsByGenre') final Songs? songsByGenre,
-      @JsonKey(name: 'lyrics') final Lyrics? lyrics,
-      @JsonKey(name: 'podcasts') final Podcasts? podcasts,
-      @JsonKey(name: 'newestPodcasts') final NewestPodcasts? newestPodcasts,
-      @JsonKey(name: 'internetRadioStations')
+      @JsonKey(name: 'musicFolders', includeIfNull: false)
+      final MusicFolders? musicFolders,
+      @JsonKey(name: 'indexes', includeIfNull: false) final Indexes? indexes,
+      @JsonKey(name: 'directory', includeIfNull: false)
+      final Directory? directory,
+      @JsonKey(name: 'genres', includeIfNull: false) final Genres? genres,
+      @JsonKey(name: 'artists', includeIfNull: false) final ArtistsId3? artists,
+      @JsonKey(name: 'artist', includeIfNull: false)
+      final ArtistWithAlbumsId3? artist,
+      @JsonKey(name: 'album', includeIfNull: false)
+      final AlbumWithSongsId3? album,
+      @JsonKey(name: 'song', includeIfNull: false) final Child? song,
+      @JsonKey(name: 'videos', includeIfNull: false) final Videos? videos,
+      @JsonKey(name: 'videoInfo', includeIfNull: false)
+      final VideoInfo? videoInfo,
+      @JsonKey(name: 'nowPlaying', includeIfNull: false)
+      final NowPlaying? nowPlaying,
+      @JsonKey(name: 'searchResult', includeIfNull: false)
+      final SearchResult? searchResult,
+      @JsonKey(name: 'searchResult2', includeIfNull: false)
+      final SearchResult2? searchResult2,
+      @JsonKey(name: 'searchResult3', includeIfNull: false)
+      final SearchResult3? searchResult3,
+      @JsonKey(name: 'playlists', includeIfNull: false)
+      final Playlists? playlists,
+      @JsonKey(name: 'playlist', includeIfNull: false)
+      final PlaylistWithSongs? playlist,
+      @JsonKey(name: 'jukeboxStatus', includeIfNull: false)
+      final JukeboxStatus? jukeboxStatus,
+      @JsonKey(name: 'jukeboxPlaylist', includeIfNull: false)
+      final JukeboxPlaylist? jukeboxPlaylist,
+      @JsonKey(name: 'license', includeIfNull: false) final License? license,
+      @JsonKey(name: 'users', includeIfNull: false) final Users? users,
+      @JsonKey(name: 'user', includeIfNull: false) final User? user,
+      @JsonKey(name: 'chatMessages', includeIfNull: false)
+      final ChatMessages? chatMessages,
+      @JsonKey(name: 'albumList', includeIfNull: false)
+      final AlbumList? albumList,
+      @JsonKey(name: 'albumList2', includeIfNull: false)
+      final AlbumList2? albumList2,
+      @JsonKey(name: 'randomSongs', includeIfNull: false)
+      final Songs? randomSongs,
+      @JsonKey(name: 'songsByGenre', includeIfNull: false)
+      final Songs? songsByGenre,
+      @JsonKey(name: 'lyrics', includeIfNull: false) final Lyrics? lyrics,
+      @JsonKey(name: 'podcasts', includeIfNull: false) final Podcasts? podcasts,
+      @JsonKey(name: 'newestPodcasts', includeIfNull: false)
+      final NewestPodcasts? newestPodcasts,
+      @JsonKey(name: 'internetRadioStations', includeIfNull: false)
       final InternetRadioStations? internetRadioStations,
-      @JsonKey(name: 'bookmarks') final Bookmarks? bookmarks,
-      @JsonKey(name: 'playQueue') final PlayQueue? playQueue,
-      @JsonKey(name: 'shares') final Shares? shares,
-      @JsonKey(name: 'starred') final Starred? starred,
-      @JsonKey(name: 'starred2') final Starred2? starred2,
-      @JsonKey(name: 'albumInfo') final AlbumInfo? albumInfo,
-      @JsonKey(name: 'artistInfo') final ArtistInfo? artistInfo,
-      @JsonKey(name: 'artistInfo2') final ArtistInfo2? artistInfo2,
-      @JsonKey(name: 'similarSongs') final SimilarSongs? similarSongs,
-      @JsonKey(name: 'similarSongs2') final SimilarSongs2? similarSongs2,
-      @JsonKey(name: 'topSongs') final TopSongs? topSongs,
-      @JsonKey(name: 'scanStatus') final ScanStatus? scanStatus,
-      @JsonKey(name: 'error') final Error? error}) = _$ResponseImpl;
+      @JsonKey(name: 'bookmarks', includeIfNull: false)
+      final Bookmarks? bookmarks,
+      @JsonKey(name: 'playQueue', includeIfNull: false)
+      final PlayQueue? playQueue,
+      @JsonKey(name: 'shares', includeIfNull: false) final Shares? shares,
+      @JsonKey(name: 'starred', includeIfNull: false) final Starred? starred,
+      @JsonKey(name: 'starred2', includeIfNull: false) final Starred2? starred2,
+      @JsonKey(name: 'albumInfo', includeIfNull: false)
+      final AlbumInfo? albumInfo,
+      @JsonKey(name: 'artistInfo', includeIfNull: false)
+      final ArtistInfo? artistInfo,
+      @JsonKey(name: 'artistInfo2', includeIfNull: false)
+      final ArtistInfo2? artistInfo2,
+      @JsonKey(name: 'similarSongs', includeIfNull: false)
+      final SimilarSongs? similarSongs,
+      @JsonKey(name: 'similarSongs2', includeIfNull: false)
+      final SimilarSongs2? similarSongs2,
+      @JsonKey(name: 'topSongs', includeIfNull: false) final TopSongs? topSongs,
+      @JsonKey(name: 'scanStatus', includeIfNull: false)
+      final ScanStatus? scanStatus,
+      @JsonKey(name: 'error', includeIfNull: false)
+      final Error? error}) = _$SubsonicResponseImpl;
 
-  factory _Response.fromJson(Map<String, dynamic> json) =
-      _$ResponseImpl.fromJson;
+  factory _SubsonicResponse.fromJson(Map<String, dynamic> json) =
+      _$SubsonicResponseImpl.fromJson;
 
   @override
   @JsonKey(name: 'status')
@@ -1859,140 +1917,140 @@ abstract class _Response implements SubResponse {
   @JsonKey(name: 'version')
   String get version;
   @override
-  @JsonKey(name: 'musicFolders')
+  @JsonKey(name: 'musicFolders', includeIfNull: false)
   MusicFolders? get musicFolders;
   @override
-  @JsonKey(name: 'indexes')
+  @JsonKey(name: 'indexes', includeIfNull: false)
   Indexes? get indexes;
   @override
-  @JsonKey(name: 'directory')
+  @JsonKey(name: 'directory', includeIfNull: false)
   Directory? get directory;
   @override
-  @JsonKey(name: 'genres')
+  @JsonKey(name: 'genres', includeIfNull: false)
   Genres? get genres;
   @override
-  @JsonKey(name: 'artists')
+  @JsonKey(name: 'artists', includeIfNull: false)
   ArtistsId3? get artists;
   @override
-  @JsonKey(name: 'artist')
+  @JsonKey(name: 'artist', includeIfNull: false)
   ArtistWithAlbumsId3? get artist;
   @override
-  @JsonKey(name: 'album')
+  @JsonKey(name: 'album', includeIfNull: false)
   AlbumWithSongsId3? get album;
   @override
-  @JsonKey(name: 'song')
+  @JsonKey(name: 'song', includeIfNull: false)
   Child? get song;
   @override
-  @JsonKey(name: 'videos')
+  @JsonKey(name: 'videos', includeIfNull: false)
   Videos? get videos;
   @override
-  @JsonKey(name: 'videoInfo')
+  @JsonKey(name: 'videoInfo', includeIfNull: false)
   VideoInfo? get videoInfo;
   @override
-  @JsonKey(name: 'nowPlaying')
+  @JsonKey(name: 'nowPlaying', includeIfNull: false)
   NowPlaying? get nowPlaying;
   @override
-  @JsonKey(name: 'searchResult')
+  @JsonKey(name: 'searchResult', includeIfNull: false)
   SearchResult? get searchResult;
   @override
-  @JsonKey(name: 'searchResult2')
+  @JsonKey(name: 'searchResult2', includeIfNull: false)
   SearchResult2? get searchResult2;
   @override
-  @JsonKey(name: 'searchResult3')
+  @JsonKey(name: 'searchResult3', includeIfNull: false)
   SearchResult3? get searchResult3;
   @override
-  @JsonKey(name: 'playlists')
+  @JsonKey(name: 'playlists', includeIfNull: false)
   Playlists? get playlists;
   @override
-  @JsonKey(name: 'playlist')
+  @JsonKey(name: 'playlist', includeIfNull: false)
   PlaylistWithSongs? get playlist;
   @override
-  @JsonKey(name: 'jukeboxStatus')
+  @JsonKey(name: 'jukeboxStatus', includeIfNull: false)
   JukeboxStatus? get jukeboxStatus;
   @override
-  @JsonKey(name: 'jukeboxPlaylist')
+  @JsonKey(name: 'jukeboxPlaylist', includeIfNull: false)
   JukeboxPlaylist? get jukeboxPlaylist;
   @override
-  @JsonKey(name: 'license')
+  @JsonKey(name: 'license', includeIfNull: false)
   License? get license;
   @override
-  @JsonKey(name: 'users')
+  @JsonKey(name: 'users', includeIfNull: false)
   Users? get users;
   @override
-  @JsonKey(name: 'user')
+  @JsonKey(name: 'user', includeIfNull: false)
   User? get user;
   @override
-  @JsonKey(name: 'chatMessages')
+  @JsonKey(name: 'chatMessages', includeIfNull: false)
   ChatMessages? get chatMessages;
   @override
-  @JsonKey(name: 'albumList')
+  @JsonKey(name: 'albumList', includeIfNull: false)
   AlbumList? get albumList;
   @override
-  @JsonKey(name: 'albumList2')
+  @JsonKey(name: 'albumList2', includeIfNull: false)
   AlbumList2? get albumList2;
   @override
-  @JsonKey(name: 'randomSongs')
+  @JsonKey(name: 'randomSongs', includeIfNull: false)
   Songs? get randomSongs;
   @override
-  @JsonKey(name: 'songsByGenre')
+  @JsonKey(name: 'songsByGenre', includeIfNull: false)
   Songs? get songsByGenre;
   @override
-  @JsonKey(name: 'lyrics')
+  @JsonKey(name: 'lyrics', includeIfNull: false)
   Lyrics? get lyrics;
   @override
-  @JsonKey(name: 'podcasts')
+  @JsonKey(name: 'podcasts', includeIfNull: false)
   Podcasts? get podcasts;
   @override
-  @JsonKey(name: 'newestPodcasts')
+  @JsonKey(name: 'newestPodcasts', includeIfNull: false)
   NewestPodcasts? get newestPodcasts;
   @override
-  @JsonKey(name: 'internetRadioStations')
+  @JsonKey(name: 'internetRadioStations', includeIfNull: false)
   InternetRadioStations? get internetRadioStations;
   @override
-  @JsonKey(name: 'bookmarks')
+  @JsonKey(name: 'bookmarks', includeIfNull: false)
   Bookmarks? get bookmarks;
   @override
-  @JsonKey(name: 'playQueue')
+  @JsonKey(name: 'playQueue', includeIfNull: false)
   PlayQueue? get playQueue;
   @override
-  @JsonKey(name: 'shares')
+  @JsonKey(name: 'shares', includeIfNull: false)
   Shares? get shares;
   @override
-  @JsonKey(name: 'starred')
+  @JsonKey(name: 'starred', includeIfNull: false)
   Starred? get starred;
   @override
-  @JsonKey(name: 'starred2')
+  @JsonKey(name: 'starred2', includeIfNull: false)
   Starred2? get starred2;
   @override
-  @JsonKey(name: 'albumInfo')
+  @JsonKey(name: 'albumInfo', includeIfNull: false)
   AlbumInfo? get albumInfo;
   @override
-  @JsonKey(name: 'artistInfo')
+  @JsonKey(name: 'artistInfo', includeIfNull: false)
   ArtistInfo? get artistInfo;
   @override
-  @JsonKey(name: 'artistInfo2')
+  @JsonKey(name: 'artistInfo2', includeIfNull: false)
   ArtistInfo2? get artistInfo2;
   @override
-  @JsonKey(name: 'similarSongs')
+  @JsonKey(name: 'similarSongs', includeIfNull: false)
   SimilarSongs? get similarSongs;
   @override
-  @JsonKey(name: 'similarSongs2')
+  @JsonKey(name: 'similarSongs2', includeIfNull: false)
   SimilarSongs2? get similarSongs2;
   @override
-  @JsonKey(name: 'topSongs')
+  @JsonKey(name: 'topSongs', includeIfNull: false)
   TopSongs? get topSongs;
   @override
-  @JsonKey(name: 'scanStatus')
+  @JsonKey(name: 'scanStatus', includeIfNull: false)
   ScanStatus? get scanStatus;
   @override
-  @JsonKey(name: 'error')
+  @JsonKey(name: 'error', includeIfNull: false)
   Error? get error;
 
-  /// Create a copy of SubResponse
+  /// Create a copy of SubsonicResponse
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ResponseImplCopyWith<_$ResponseImpl> get copyWith =>
+  _$$SubsonicResponseImplCopyWith<_$SubsonicResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
